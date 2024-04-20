@@ -1,0 +1,294 @@
+:root {
+    --primary-color: white;
+    --secondary-color:rgb(21, 168, 226);
+    --bg-color: black;
+}
+
+* ,
+.backgroundImg {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition-duration: 200ms;
+}
+
+.h2o {
+    background-color: rgb(255, 255, 255);
+    padding: 9px;
+    border-radius: 8px;
+    color: rgb(21, 168, 226);
+    border: 1px solid black;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.backgroundImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+
+
+}
+
+.darkerText {
+    color: var(--secondary-color);
+
+}
+
+header,
+main,
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%; 
+    background-color: rgb(87, 79, 79);
+    padding: 24px;
+}
+
+
+
+
+nav {
+    color: rgb(3, 3, 121);
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid black;
+                                                                                                    
+    
+
+}
+
+nav a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 0.7;
+
+}
+
+main,
+section,
+.nameContainer {
+    display: flex;
+    flex-direction: column
+}
+
+p {
+    font-size: 1.05em;
+}
+
+main {
+    gap: 64px;
+    padding-bottom: 64px;
+}
+
+section {
+    gap: 48px;
+}
+
+.nameContainer {
+    gap: 8px;
+}
+
+.statsContainer {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+gap: 24px;
+
+}
+
+
+.imgContainer {
+    border-radius: 100%;
+    border-inline-end-color: whitesmoke;
+    max-width: 144px;
+    overflow: hidden;
+    border: 2.5px solid rgb(56, 255, 228);
+
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    place-content:  1/1;
+    object-fit: cover;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.stats>div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.stats div i {
+    font-size: 1.4em;
+}
+
+.stats div div {
+    display: grid;
+    place-content: center;
+    min-width: 40px;
+}
+
+.aboutMe {
+    line-height: 1.5em;
+}
+
+.outreach{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    width: fit-content;
+    margin-right: auto;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    
+}
+
+.outreach:hover {
+    opacity: 0.7;
+}
+
+
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+
+}
+
+.headerText {
+    margin-bottom: 24px;
+    padding: 10px;
+    border-radius: 8px;
+    
+    
+
+}
+
+.projectItem {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+
+}
+
+.projectItem>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.projectItem>div:last-child {
+    place-content: 16/9;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2.5px solid skyblue;
+}
+
+.projectItem div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+
+}
+
+.linkItem {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 14px !important;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linkItem:hover {
+    opacity: 0.7;
+}
+
+.linkItem p {
+    font-size: 0.9em;
+}
+
+.fotocredit {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 640px) {
+
+    .statsContainer {
+        flex-direction: row;
+    }
+
+    .stats {
+        gap: 0px;
+    }
+}
+
+.aboutMe {
+    width: 80%;
+    margin-right: auto;
+}
